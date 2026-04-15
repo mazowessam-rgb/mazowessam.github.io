@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #3b5265;
+    overflow: auto;
+}
+
+/* Navbar */
+header {
+    background-color: #677e8a;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #12484c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* Main */
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: inherit;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}
+
+tr:hover {
+    background: #dff9fb;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #1abc9c;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Home Background */
+.hero-page {
+    background-image: url("home.jpg.png");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* طبقة شفافة */
+.hero-text {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* زرار */
+.start-btn {
+    display: inline-block;
+    background: #1abc9c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #16a085;
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+}
