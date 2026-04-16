@@ -58,7 +58,7 @@ section {
 /* Table */
 table {
     width: 100%;
-    border-collapse: inherit;
+    border-collapse: collapse;
     margin-top: 20px;
 }
 
@@ -126,9 +126,11 @@ footer {
     }
 }
 
+
+
 /* Home Background */
 .hero-page {
-    background-image: url("home.jpg");
+    background-image: url("home.jpg.png");
     background-size: cover;
     background-position: center;
     height: 90vh;
